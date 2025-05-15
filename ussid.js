@@ -4,7 +4,6 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-
 let currentPage = 1;
 let currentContext = 'main'; 
 let mvolaPage = 1;
