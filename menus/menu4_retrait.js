@@ -13,28 +13,28 @@ async function displayRetraitMenu() {
     const choice = await prompt('\nVotre choix: ');
 
     switch (choice) {
-      case '1': {
-        const agentNumber = await prompt('Numéro de l\'agent : ');
-        const amount = await prompt('Montant à retirer : ');
-        const password = await prompt('Mot de passe : ');
-        console.log(`\n✅ Retrait de ${amount} Ar vers l'agent ${agentNumber} validé.`);
-        await waitForBack();
-        break;
-      }
-      case '2': {
-        const cardNumber = await prompt('Numéro de carte : ');
-        const amount = await prompt('Montant à retirer : ');
-        const code = await prompt('Code de la carte : ');
-        console.log(`\n✅ Retrait de ${amount} Ar via la carte ${cardNumber} validé.`);
-        await waitForBack();
-        break;
-      }
-      case '*':
-        exit = true;
-        break;
-      default:
-        console.log('Choix invalide. Réessayez.');
-        await waitForBack();
+    case '1': {
+      const agentNumber = await prompt('Numéro de l\'agent : ');
+      const amount = await prompt('Montant à retirer : ');
+      const password = await prompt('Mot de passe : ');
+      console.log(`\n✅ Retrait de ${amount} Ar vers l'agent ${agentNumber} validé.`);
+      await waitForBack();
+      break;
+    }
+    case '2': {
+      const cardNumber = await prompt('Numéro de carte : ');
+      const amount = await prompt('Montant à retirer : ');
+      const code = await prompt('Code de la carte : ');
+      console.log(`\n✅ Retrait de ${amount} Ar via la carte ${cardNumber} validé.`);
+      await waitForBack();
+      break;
+    }
+    case '*':
+      exit = true;
+      break;
+    default:
+      console.log('Choix invalide. Réessayez.');
+      await waitForBack();
     }
   }
 }
