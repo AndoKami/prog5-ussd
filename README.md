@@ -18,6 +18,7 @@ Pour assurer la cohérence et la lisibilité du code, nous avons adopté les con
 |----------------|----------------|--------------------------------|
 | Variables      | `camelCase`    | `currentPage`, `menuOptions`  |
 | Fonctions      | `camelCase`    | `handleChoice()`              |
+| Fichiers       | `snake_case`   | `menu_1_acheter_credit.js`     |
 
 
 ---
