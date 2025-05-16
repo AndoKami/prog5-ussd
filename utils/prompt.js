@@ -6,7 +6,6 @@ const rl = readline.createInterface({
 });
 
 /**
- * Pose une question à l'utilisateur et retourne la réponse en Promise.
  * @param {string} question
  * @returns {Promise<string>}
  */

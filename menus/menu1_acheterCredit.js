@@ -2,9 +2,7 @@ const { prompt } = require('../utils/prompt.js');
 
 let tempData = {};
 
-/**
- * Sous-menu acheter crédit ou offre YAS.
- */
+
 async function displayCreditOrOfferMenu() {
   console.clear();
   console.log('=== Acheter crédit ou offre YAS ===');

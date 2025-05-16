@@ -1,9 +1,12 @@
 const { prompt } = require('../utils/prompt.js');
 const menu1 = require('./menu1_acheterCredit.js');
 const menu2 = require('./menu2_transfererArgent.js');
-const menu3 = require('./menu3_creditEpargne');
-const menu4 = require('./menu4_retrait');
-
+const menu3 = require('./menu3_creditEpargne.js');
+const menu4 = require('./menu4_retrait.js');
+const menu5 = require('./menu5_facture.js');
+const menu6 = require('./menu6_monCompte.js');
+const menu7 = require('./menu7_recevoirArgent.js');
+const menu8 = require('./menu8_banqueMicroFinances.js');
 
 const mvolaMenu = {
   1: {
@@ -64,6 +67,18 @@ async function displayMenu(currentPage = 1) {
     await displayMenu(currentPage);
   } else if (input === '4') {
     await menu4.displayRetraitMenu();
+    await displayMenu(currentPage);
+  } else if (input === '5') {
+    await menu5.displayFactureMenu();
+    await displayMenu(currentPage);
+  } else if (input === '6') {
+    await menu6.displayMonCompteMenu();
+    await displayMenu(currentPage);
+  } else if (input === '7') {
+    await menu7.displayRecevoirArgentMenu();
+    await displayMenu(currentPage);
+  } else if (input === '8') {
+    await menu8.displayBanqueMicroFinanceMenu();
     await displayMenu(currentPage);
   } else if (menu.options[input]) {
     console.log(`\nVous avez choisi : ${menu.options[input]}`);
